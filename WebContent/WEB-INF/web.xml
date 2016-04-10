@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+id="WebApp_ID" 
+version="3.1">
+
+  <display-name>POX-FoodMenu-trath-Eclipse</display-name>
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>example.webApp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FoodItem</servlet-name>
+    <servlet-class>example.FoodItem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodItem</servlet-name>
+    <url-pattern>/FoodItem/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Student</servlet-name>
+    <servlet-class>example.Student</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Student</servlet-name>
+    <url-pattern>/Student/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>Exam</servlet-name>
+    <servlet-class>example.Exam</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Exam</servlet-name>
+    <url-pattern>/Exam/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
